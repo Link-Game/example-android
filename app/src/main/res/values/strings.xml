@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">游戏互联SDK示例</string>
+    <string name="title_home">发起群聊</string>
+    <string name="title_dashboard">添加好友</string>
+    <string name="title_notifications">扫一扫</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <!--key相关-->
+    <string name="huawei_key">100195359</string>
+    <string name="xiaomi_key">5651771075942</string>
+    <string name="xiaomi_id">2882303761517710942</string>
+    <string name="gaode_key">8bd3937188bb9f2047c1449dc31837ef</string>
+    <string name="wx_key">wx3aabc28b721149f1</string>
+    <string name="wx_appSecret">a62d54e794dfdb644f9c7863459a9f59</string>
+    <string name="rong_key">x18ywvqfxnwbc</string>
+    <!--超链接-->
+    <string name="pwd_login"><u>使用密码登录</u></string>
+    <string name="agreement_hint">点击\"同意并继续\"即表示已阅读并同意</string>
+    <string name="agreement"><u>《用户使用协议》</u></string>
+    <string name="code_login"><u>使用验证码登录</u></string>
+    <string name="login_more"><u>更多</u></string>
+    <string name="forget_pwd"><u>忘记密码</u></string>
+
+    <string name="about_version">游戏互联beta1.0</string>
+    <string name="scan_text">将二维码放入框内，即可自动扫描</string>
+    <string name="rc_plugin_games">游戏</string>
+    <string name="start_games_scheme">nanlingapp</string>
+
+    <!--add package-->
+    <string name="scan_code">Scan code</string>
+    <string name="tint_package_name">Name(Optional)</string>
+    <string name="tint_package_number">Number</string>
+    <string name="wrong_number_and_check">Invalid number, check it and retry.</string>
+    <string name="require_permission">二维码扫描需要您打开相机权限</string>
+    <string name="package_name_default_pre">Package</string>
+    <string name="package_exist">The package is in your list.</string>
+    <string name="permission_denied">权限被拒绝</string>
+    <string name="error">Error</string>
+    <string name="something_wrong">Something wrong…</string>
+    <string name="unable_to_open_camera">Unable to open camera, please check it and try again later.</string>
+    <string name="go_to_settings">去设置</string>
+    <string name="catg_refreshing">加载中&#8230;</string>
+    <string name="click_to_refresh"><Data><![CDATA[请求数据失败，点击<font color="#2AC2EF">重试</font>]]></Data></string>
+    <!--add package end-->
+
+    <!--网络请求失败提示语-->
+    <string name="http_error">网络错误</string>
+
+    <string name="Search">搜索</string>
+    <string name="ac_search_no_result_pre">没有搜到</string>
+    <string name="ac_search_no_result_suffix">相关的信息</string>
+    <string name="ac_search_chat_title">聊天记录</string>
+    <string name="ac_search_chat_detail">共%1$d条与</string>
+    <string name="ac_search_chat_detail_one">共</string>
+    <string name="ac_search_chat_detail_two">条与</string>
+    <string name="ac_search_chat_detail_three">相关的聊天记录</string>
+    <string name="ac_search_nick_name">昵称： </string>
+    <string name="ac_contact_nick_name">昵称:</string>
+
+    <string name="ac_search_friend">联系人</string>
+    <string name="ac_search_group">群组</string>
+    <string name="ac_search_chatting_records">聊天记录</string>
+    <string name="ac_search_more_friend">查看更多联系人</string>
+    <string name="ac_search_more_group">查看更多群组</string>
+    <string name="ac_search_more_chatting_records">查看更多聊天记录</string>
+
+    <string name="search_item_chat_records">%d条相关记录</string>
+    <string name="item_filter_group_list_include">包含：</string>
+</resources>

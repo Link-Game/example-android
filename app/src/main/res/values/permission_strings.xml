@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--需要申请的权限-->
+    <string name="read">获取手机状态</string>
+    <string name="coarse_location">获取位置信息</string>
+    <string name="fina_location">获取位置信息</string>
+    <string name="read_external">读SD卡</string>
+    <string name="write_external">写SD卡</string>
+    <string name="location">定位</string>
+
+    <string name="perm_tip">
+        当前应用缺少必要权限。\n请点击"设置"-"权限"-打开所需权限。\n最后点击两次后退按钮，即可返回。
+    </string>
+    <string name="ask_again">请给予应用必要权限，让程序可正常工作。</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+</resources>
