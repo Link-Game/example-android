@@ -36,7 +36,7 @@ public class MainActivity extends PermissionActivity{
         face = (ImageView) findViewById(R.id.face);
         name = (TextView) findViewById(R.id.name);
         cmApi = CmApiFactory.createCmApi(this);
-        cmApi.register("1234568dfghijkpvwx", "49c43232ed49af9208be48c4208039be");
+        cmApi.register(App.APPID, App.APP_SECRET);
         shareText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

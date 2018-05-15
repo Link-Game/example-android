@@ -23,22 +23,36 @@ public class LGHandlerActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.onResp(getIntent());
+        this.uploadResultAndCallback(getIntent());
     }
 
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         this.setIntent(intent);
-        this.onResp(intent);
+        this.uploadResultAndCallback(intent);
 
     }
-    void onResp(Intent intent) {
-        if (intent == null) {
-            return;
-        }
+
+    private void uploadResultAndCallback(Intent intent)
+    {
         int type = intent.getIntExtra("type", 0);
         int code = intent.getIntExtra("code", 0);
+        String message = intent.getStringExtra("message");
+        String refresh_token = intent.getStringExtra("refresh_token");
+
+        if(refresh_token == null){
+            refresh_token = "" ;
+        }
+        //游戏客户端使用本SDK无法通过复写onResp来获取分享/授权结果，因此通过以下代码回调
+        LinkGameSDK.sendMsg(JsonUtil.formatJson(code, message,
+                JsonUtil.formatJson(type, refresh_token)));
+
+        onResp(type,code,refresh_token);
+    }
+
+    //如果授权成功，则返回refresh_token，否则返回空字符串
+    protected void onResp(int type,int code,String refresh_token) {
 
         if(type == Config.LG_SHARE){
             switch (code){
@@ -59,6 +73,7 @@ public class LGHandlerActivity extends Activity {
             switch (code){
                 case Config.LG_SUCCESS:
                     Log.e(TAG , "LGHandlerActivity==" + "授权成功") ;
+                    Log.e(TAG,"LGHandlerActivity refresh_token=="+refresh_token);
                     break;
                 case Config.LG_CANCEL:
                     Log.e(TAG , "LGHandlerActivity==" + "授权取消") ;
@@ -78,12 +93,6 @@ public class LGHandlerActivity extends Activity {
             }
         }
 
-        String message = intent.getStringExtra("message");
-        String refresh_token = intent.getStringExtra("refresh_token");
-        if(refresh_token == null){
-            refresh_token = "" ;
-        }
-        LinkGameSDK.sendMsg(JsonUtil.formatJson(code, message,
-                JsonUtil.formatJson(type, refresh_token)));
+
     }
 }

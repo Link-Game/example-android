@@ -16,6 +16,9 @@ public class App extends Application{
     public static App instance;
     private static Handler mWeakHandler;
 
+    public static final String APPID = "2358aefijklnoprtuv";
+    public static final String APP_SECRET = "6e883172e2b072604fed6269c4a0c461";
+
     @Override
     public void onCreate() {
         super.onCreate();

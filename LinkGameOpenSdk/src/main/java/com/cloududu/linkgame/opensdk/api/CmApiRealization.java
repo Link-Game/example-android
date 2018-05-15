@@ -165,6 +165,11 @@ final class CmApiRealization implements CmApi {
 
     @Override
     public void authorization() {
+        if(!isAppInstalled())
+        {
+            Toast.makeText(context, "未安装游戏互联", Toast.LENGTH_SHORT).show();
+            return;
+        }
         if (TextUtils.isEmpty(CmApiFactory.APPKEY)) {
             Log.e(TAG , "authorization==" + "appKey为空") ;
             return;
@@ -199,9 +204,11 @@ final class CmApiRealization implements CmApi {
                 pName.add(pn);
             }
         }
-        if(!pName.contains("com.cloududu.linkgame")){
-            Log.e(TAG , "isAppInstalled==" + "未安装游戏互联") ;
-        }
+        //旧的包名：com.chuangmi.youxihulian
+        //新的包名：con.cloududu.linkgame
+//        if(!pName.contains("com.chuangmi.youxihulian")){
+//            Log.e(TAG , "isAppInstalled==" + "未安装游戏互联") ;
+//        }
         //判断包名是否在系统包名列表中
         return pName.contains("com.cloududu.linkgame");
     }

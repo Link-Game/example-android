@@ -1,1 +1,1 @@
-include ':app', ':LinkGameOpenSdk'
+include ':app',':LinkGameOpenSdk'
