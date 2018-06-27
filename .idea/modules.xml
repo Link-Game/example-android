@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LinkGameOpenSdk/LinkGameOpenSdk.iml" filepath="$PROJECT_DIR$/LinkGameOpenSdk/LinkGameOpenSdk.iml" />
+      <module fileurl="file://E:\CMProjecdts\Outer\LinkGameSDKDemo\LinkGameOpenSdk\LinkGameOpenSdk.iml" filepath="E:\CMProjecdts\Outer\LinkGameSDKDemo\LinkGameOpenSdk\LinkGameOpenSdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkGameSDKDemo.iml" filepath="$PROJECT_DIR$/LinkGameSDKDemo.iml" />
+      <module fileurl="file://E:\CMProjecdts\Outer\LinkGameSDKDemo\LinkGameSDKDemo.iml" filepath="E:\CMProjecdts\Outer\LinkGameSDKDemo\LinkGameSDKDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\CMProjecdts\Outer\LinkGameSDKDemo\app\app.iml" filepath="E:\CMProjecdts\Outer\LinkGameSDKDemo\app\app.iml" />
     </modules>
   </component>
 </project>
